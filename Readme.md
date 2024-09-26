@@ -26,7 +26,7 @@ endmodule
 ```
 ## Full adder using data flow 
 ```verilog
-module fa(a,b,c,sum,carry); 
+module fadf(a,b,c,sum,carry); 
 
   input a,b,c; 
 
@@ -104,6 +104,7 @@ module fa_tb;
 
 endmodule 
 ```
+
 ![alt text](./image/image.png)
 ![alt text](./image/image-1.png)
 ## Full adder using half adder 
