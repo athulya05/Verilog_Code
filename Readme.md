@@ -104,7 +104,6 @@ module fa_tb;
 
 endmodule 
 ```
-
 ![alt text](./image/image.png)
 ![alt text](./image/image-1.png)
 ## Full adder using half adder 
@@ -121,17 +120,17 @@ module ha(a,b,sum,carry);
 
 endmodule 
 
-      module fa_ha(input a,b,c,output sum,carry); 
+module fa_ha(input a,b,c,output sum,carry); 
 
-      wire x,y,z; 
+wire x,y,z; 
 
-      ha h1(.a(a),.b(b),.sum(x),.carry(y)); 
+ha h1(.a(a),.b(b),.sum(x),.carry(y)); 
 
-      ha h2(.a(x),.b(c),.sum(sum),.carry(z)); 
+ha h2(.a(x),.b(c),.sum(sum),.carry(z)); 
 
-      or o1(carry,y,z); 
+or o1(carry,y,z); 
 
-    endmodule 
+endmodule 
 ```
 ### Test bench 
 ```verilog
@@ -359,7 +358,7 @@ endmodule
 
  
 
-module mux_4_1(input i0,i1,i2,i3,s0,s1,output y); 
+module mux_4_1_2_1(input i0,i1,i2,i3,s0,s1,output y); 
 
   wire a,b; 
 
